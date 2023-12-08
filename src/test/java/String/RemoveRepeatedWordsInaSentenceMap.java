@@ -2,6 +2,7 @@ package String;
 
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
+import java.util.Set;
 
 import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ public class RemoveRepeatedWordsInaSentenceMap {
 		for(int i=0;i<sp.length;i++) {
 			map.put(sp[i], 1);
 		}
-		for(Entry<String, Integer> m:map.entrySet()) {
+		for( Entry<String, Integer> m:map.entrySet()) {
 			System.out.print(m.getKey()+" ");
 		}
 	}

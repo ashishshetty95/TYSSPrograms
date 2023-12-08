@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="String.RemoveDuplicateNumbers">
+      <class name="String.PrintOnlyNumbersFromStringAndPrintInfromEndTest">
         <methods>
-          <include name="duplicate"/>
+          <include name="reverse"/>
         </methods>
-      </class> <!-- String.RemoveDuplicateNumbers -->
+      </class> <!-- String.PrintOnlyNumbersFromStringAndPrintInfromEndTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

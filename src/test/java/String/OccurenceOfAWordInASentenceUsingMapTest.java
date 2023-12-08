@@ -6,7 +6,6 @@ import java.util.Map.Entry;
 import org.testng.annotations.Test;
 
 public class OccurenceOfAWordInASentenceUsingMapTest {
-	public class DuplicateWordsInASentenceUsingMapTest {
 		@Test
 		public void duplicate() {
 			String s="hi hello hi hello welcome".toLowerCase();
@@ -24,4 +23,3 @@ public class OccurenceOfAWordInASentenceUsingMapTest {
 			}
 		}
 	}	
-}
