@@ -53,7 +53,7 @@ public class StringPrograms {
 	
 	@Test
 	public void reverseWordsInString() {
-		String s="My name is ashish";
+		String s="My name is java";
 		String[] sp=s.split(" ");
 		String rev="";
 		for(int i=sp.length-1;i>=0;i--) {
@@ -64,7 +64,7 @@ public class StringPrograms {
 	
 	@Test
 	public void reveseTheCharactersOfWords() {
-		String s="My name is ashish";
+		String s="My name is java";
 		String[] sp=s.split(" ");
 		for(int i=0;i<sp.length;i++) {
 			String rev="";
@@ -139,9 +139,9 @@ public class StringPrograms {
 		}
 		for(Entry<String, Integer> m:map.entrySet()) {
 			if (m.getValue()>1) {
-				System.out.println(m.getKey()+" is a duplicate word");
+				System.out.println(m.getKey()+" is a duplicate word: "+m.getValue());
 			}else {
-				System.out.println(m.getKey()+" is a unique word");
+				System.out.println(m.getKey()+" is a unique word: "+m.getValue());
 			}
 		}
 	}
@@ -217,8 +217,10 @@ public class StringPrograms {
 		for(int i=0;i<sp.length;i++) {
 			if (b[i]==false) {
 				count++;
+				System.out.print(sp[i]+" ");
 			}
 		}
+		System.out.println();
 		String[] n=new String[count];
 		int c=0;
 		for(int i=0;i<sp.length;i++) {
@@ -228,7 +230,7 @@ public class StringPrograms {
 			}
 		}
 		for(int i=0;i<n.length;i++) {
-			System.out.println(n[i]);
+			System.out.print(n[i]+" ");
 		}
 	}
 	
@@ -280,8 +282,8 @@ public class StringPrograms {
 	}
 	
 	@Test
-	public void ILOVETYSS() {
-		String s="My name is ashish";
+	public void ILOVEINDIA() {
+		String s="I LOVE INDIA";
 		String s1=s.replaceAll(" ", "");
 		int count=s1.length()-1;
 		for(int i=0;i<s.length();i++) {
@@ -295,7 +297,7 @@ public class StringPrograms {
 	
 	@Test
 	public void MyNameIsPrakash() {
-		String s="My$ na&me is& $praka&sh";
+		String s="My$ coun&try is& $Ind&ia";
 		String[] s2=s.split(" ");
 		for(int i=0;i<s2.length;i++){
 			String r=s2[i].replaceAll("[^a-zA-Z]", "");

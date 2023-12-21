@@ -206,7 +206,7 @@ public class Arrays{
 	
 	@Test
 	public void frequentlyRepeatedNumber() {
-		int[] a= {1,4,2,4,3,1,2,1,3,4,1,2,4,4,3,2,2,2,3,1,2,3,4};
+		int[] a= {1,4,2,4,3,1,2,1,3,1};
 		boolean[] b=new boolean[a.length];
 		int max=0;
 		int rep=a[0];
@@ -230,7 +230,7 @@ public class Arrays{
 	
 	@Test
 	public void frequentlyRepeatedNumbers() {
-		int[] a= {1,1,1,4,2,4,3,3,3,1,2,1,3,4,1,2,4,4,3,2,2,2,3,1,2,3,4};
+		int[] a= {1,2,3,4,1,2,3,1,2};
 		boolean[] b=new boolean[a.length];
 		int max=0;
 		int dup=a[0];
@@ -324,7 +324,7 @@ public class Arrays{
 		}
 		for(int i=0;i<s.length;i++) {
 			if (s[i].length()==count) {
-				System.out.println(s[i]);
+				System.out.println(s[i]+" is maximum length word");
 			}
 		}
 	}
@@ -337,10 +337,9 @@ public class Arrays{
 			map.put(s[i], 1);
 		}
 		int max=map.lastKey().length();
-		System.out.println(max);
 		for(Entry<String, Integer> m:map.entrySet()) {
 			if (m.getKey().length()==max) {
-				System.out.println(m.getKey());
+				System.out.println(m.getKey()+" is maximum length word");
 			}
 		}
 	}
@@ -371,5 +370,45 @@ public class Arrays{
 		for(int i=0;i<c.length;i++) {
 			System.out.print(c[i]+" ");
 		}
+	}
+	
+	@Test
+	public void addArray() {
+		int[] a= {1,2,3,4};
+		int[] b= {1,2,3};
+		int length=a.length;
+		if (a.length<b.length) {
+			length=b.length;
+		}
+		for(int i=0;i<length;i++) {
+			try {
+				System.out.print(a[i]+b[i]+" ");
+			} catch (Exception e) {
+				if (a.length>b.length) {
+					System.out.print(a[i]+" ");
+				}else {
+					System.out.print(b[i]+" ");
+				}
+			}
+		}
+	}
+	
+	@Test
+	public void maxAndMinInArray() {
+		int[] a= {10,4,5,6,2,3,7,9,11};
+		int firstmax=a[0];
+		int secondmax=a[1];
+		for(int i=0;i<a.length;i++) {
+				if (a[i]>firstmax) {
+					firstmax=a[i];
+				}
+		}
+		System.out.println(firstmax);
+		for(int i=0;i<a.length;i++) {
+			if (a[i]!=firstmax && a[i]>secondmax) {
+				secondmax=a[i];
+			}
+		}
+		System.out.println(secondmax);
 	}
 }

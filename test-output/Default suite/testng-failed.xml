@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.StringPrograms">
+      <class name="Practice.Unique">
         <methods>
-          <include name="MyNameIsPrakash"/>
+          <include name="lookAndSay"/>
         </methods>
-      </class> <!-- Practice.StringPrograms -->
+      </class> <!-- Practice.Unique -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

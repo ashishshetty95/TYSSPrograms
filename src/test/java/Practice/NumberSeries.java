@@ -99,7 +99,7 @@ public class NumberSeries {
 	
 	@Test
 	public void smallestEvenNumberInArray() {
-		int[] a= {3,5,7,9,11};
+		int[] a= {3,5,7,9,11,2,4,0};
 		int max=a[0];
 		int min=a[0];
 		for(int i=0;i<a.length;i++) {
