@@ -171,4 +171,23 @@ public class NumberSeries {
 			}
 		}
 	}
+	
+	@Test
+	public void secondLargest() {
+		int[] a= {10,2,4,7,9,12,1,5,8,3,11};
+		int max=0;
+		int smax=0;
+		for(int i=0;i<a.length;i++) {
+			if (a[i]>max) {
+				max=a[i];
+			}
+		}
+		for(int i=0;i<a.length;i++) {
+			if (a[i]>smax && a[i]<max) {
+				smax=a[i];
+			}
+		}
+		System.out.println(max+" "+smax);
+		
+	}
 }
