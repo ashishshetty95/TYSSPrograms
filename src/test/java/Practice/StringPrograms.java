@@ -195,7 +195,12 @@ public class StringPrograms {
 		String s="aabb1235dd45ee1ff44".toLowerCase();
 		String[] ch = s.split("[A-Za-z]");
 		for(int i=ch.length-1;i>=0;i--) {
-			System.out.print(ch[i]+" ");
+			System.out.print(ch[i]);
+			if (ch[i]!="") {
+				System.out.print(",");
+			}
+				
+			
 		}
 	}
 	
@@ -213,25 +218,12 @@ public class StringPrograms {
 				}
 			}
 		}
-		int count=0;
 		for(int i=0;i<sp.length;i++) {
 			if (b[i]==false) {
-				count++;
 				System.out.print(sp[i]+" ");
 			}
 		}
-		System.out.println();
-		String[] n=new String[count];
-		int c=0;
-		for(int i=0;i<sp.length;i++) {
-			if (b[i]==false) {
-				n[c]=sp[i];
-				c++;
-			}
-		}
-		for(int i=0;i<n.length;i++) {
-			System.out.print(n[i]+" ");
-		}
+		
 	}
 	
 	@Test

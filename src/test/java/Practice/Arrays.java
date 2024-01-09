@@ -329,20 +329,6 @@ public class Arrays{
 		}
 	}
 	
-	@Test
-	public void maxLengthWordUsingMap() {
-		String[] s= {"qwertyr", "tyuityu", "poiukj", "jhg", "jh"};
-		TreeMap<String, Integer> map = new TreeMap<String, Integer>();
-		for(int i=0;i<s.length;i++) {
-			map.put(s[i], 1);
-		}
-		int max=map.lastKey().length();
-		for(Entry<String, Integer> m:map.entrySet()) {
-			if (m.getKey().length()==max) {
-				System.out.println(m.getKey()+" is maximum length word");
-			}
-		}
-	}
 	
 	@Test
 	public void add() {
